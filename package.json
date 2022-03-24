@@ -1,0 +1,7 @@
+{
+  "name": "typescript-variable2",
+  "version": "1.0.0",
+  "dependencies": {
+    "typescript": "4.6.2"
+  }
+}
