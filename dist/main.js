@@ -1,7 +1,7 @@
-var money = 10000;
-var buyCar = function (car) {
-    return new Promise((function (resolve, reject) {
-        setTimeout(function () {
+let money = 1000;
+const buyCar = (car) => {
+    return new Promise(((resolve, reject) => {
+        setTimeout(() => {
             if (money >= 10000) {
                 resolve("can buy " + car);
             }
@@ -12,9 +12,9 @@ var buyCar = function (car) {
     }));
 };
 money = 100001;
-var promise = buyCar("Vinfast").then(function (value) {
+const promise = buyCar("Vinfast").then(value => {
     console.log(value);
-}, function (error) {
+}, error => {
     console.log(error);
 });
 //# sourceMappingURL=main.js.map
